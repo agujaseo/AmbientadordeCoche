@@ -1,17 +1,29 @@
 export interface Review {
   author: string;
-  rating: number; // 1-5
+  rating: number;
   text: string;
 }
 
 export interface Product {
   id: number;
   name: string;
-  imageUrl: string;
+  description: string;
+  price: number;
+  image: string;
   reviews: Review[];
 }
 
+export interface Pack {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  originalPrice?: number;
+  items: string[];
+  image: string;
+}
+
 export interface CartItem {
-  product: Product;
+  product: Product | Pack;
   quantity: number;
 }

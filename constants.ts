@@ -1,76 +1,77 @@
-import { Product } from './types';
+import type { Product } from './types';
 
 export const AROMAS: Product[] = [
-  { 
-    id: 1, 
-    name: 'Flor de Higo', 
-    imageUrl: 'https://picsum.photos/seed/higo/500/500',
+  {
+    id: 1,
+    name: 'Flor de Higo',
+    description: 'Un aroma dulce y delicado que evoca la calidez del Mediterráneo. Fresco y sofisticado.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/higo/500/500',
     reviews: [
-      { author: 'Elena V.', rating: 5, text: 'Un aroma increíblemente fresco y duradero. Me encanta.' },
-      { author: 'Marcos R.', rating: 4, text: 'Muy bueno, aunque un poco sutil para mi gusto.' },
-    ]
+      { author: 'Elena V.', rating: 5, text: 'Huele de maravilla, es sutil pero se nota. Me encanta.' },
+    ],
   },
-  { 
-    id: 2, 
-    name: 'Aire Fresco', 
-    imageUrl: 'https://picsum.photos/seed/aire/500/500',
+  {
+    id: 2,
+    name: 'Aire',
+    description: 'Una fragancia limpia y fresca como una brisa de montaña. Aporta una sensación de pureza y libertad.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/aire/500/500',
     reviews: [
-      { author: 'Juan P.', rating: 5, text: 'Huele a limpio, perfecto para el día a día. Refrescante y nada pesado.' },
-      { author: 'Carla G.', rating: 4, text: 'Un clásico que nunca falla. Buena duración.' },
-    ]
+        { author: 'Marcos P.', rating: 5, text: 'Es el olor a limpio por excelencia. Muy recomendable.' },
+        { author: 'Laura G.', rating: 4, text: 'Me gusta mucho, es muy fresco.' },
+    ],
   },
-  { 
-    id: 3, 
-    name: 'Zen', 
-    imageUrl: 'https://picsum.photos/seed/zen/500/500',
-    reviews: [
-      { author: 'Sofía L.', rating: 5, text: 'Es mi favorito. Relajante y muy agradable, ideal para después de un día de trabajo.' },
-    ]
+  {
+    id: 3,
+    name: 'Zen',
+    description: 'Una mezcla relajante de notas verdes y amaderadas que invita a la calma y la meditación.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/zen/500/500',
+    reviews: [],
   },
-  { 
-    id: 4, 
-    name: 'Té Verde', 
-    imageUrl: 'https://picsum.photos/seed/teverde/500/500',
+  {
+    id: 4,
+    name: 'Té Verde',
+    description: 'Aroma revitalizante y herbáceo con un toque cítrico. Perfecto para despejar la mente y energizar.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/teverde/500/500',
     reviews: [
-      { author: 'David M.', rating: 5, text: 'Aroma muy natural y sofisticado. No cansa en absoluto.' },
-      { author: 'Laura S.', rating: 4, text: 'Me gusta mucho, es muy fresco.' },
-    ]
+      { author: 'Carla S.', rating: 5, text: 'Increíblemente refrescante. Ideal para las mañanas.' },
+    ],
   },
-  { 
-    id: 5, 
-    name: 'Mango Dulce', 
-    imageUrl: 'https://picsum.photos/seed/mango/500/500',
-    reviews: [
-      { author: 'Andrea B.', rating: 5, text: '¡Espectacular! Huele a verano, es dulce sin ser empalagoso.' },
-      { author: 'Javier F.', rating: 5, text: 'Si te gustan los olores frutales, este es el tuyo. Dura muchísimo.' },
-    ]
+  {
+    id: 5,
+    name: 'Mango',
+    description: 'Explosión tropical de dulzura y frescura. Un aroma jugoso y exótico que te transporta al Caribe.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/mango/500/500',
+    reviews: [],
   },
-  { 
-    id: 6, 
-    name: 'Neutralizador', 
-    imageUrl: 'https://picsum.photos/seed/neutral/500/500',
+  {
+    id: 6,
+    name: 'Neutralizador',
+    description: 'Elimina eficazmente los malos olores sin enmascararlos, dejando un ambiente neutro y limpio.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/neutral/500/500',
     reviews: [
-      { author: 'Roberto C.', rating: 5, text: 'Cumple su función a la perfección. Elimina olores de tabaco y mascotas.' },
-    ]
+      { author: 'Javier F.', rating: 5, text: 'Funciona de verdad. Tenía olor a tabaco y lo ha quitado por completo.' },
+    ],
   },
-  { 
-    id: 7, 
-    name: 'Cereza Intensa', 
-    imageUrl: 'https://picsum.photos/seed/cereza/500/500',
-    reviews: [
-      { author: 'Paula N.', rating: 5, text: 'Potente y muy rico. Con un par de pulverizaciones es suficiente.' },
-    ]
+  {
+    id: 7,
+    name: 'Cereza',
+    description: 'Intenso y dulce aroma a cerezas maduras. Una fragancia clásica que nunca falla.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/cereza/500/500',
+    reviews: [],
   },
-  { 
-    id: 8, 
-    name: 'Jabón de Marsella', 
-    imageUrl: 'https://picsum.photos/seed/marsella/500/500',
-    reviews: [
-        { author: 'Miguel A.', rating: 5, text: 'El olor a limpio por excelencia. Me recuerda a la ropa recién lavada.' },
-        { author: 'Isabel T.', rating: 4, text: 'Un aroma muy agradable y duradero.' },
-    ]
+  {
+    id: 8,
+    name: 'Marsella',
+    description: 'El tradicional y reconfortante olor a jabón de Marsella. Limpio, puro y familiar.',
+    price: 7.00,
+    image: 'https://picsum.photos/seed/marsella/500/500',
+    reviews: [],
   },
 ];
-
-export const BASE_PRICE = 7;
-export const PAYMENT_URL = 'https://buy.stripe.com/placeholder_test';
