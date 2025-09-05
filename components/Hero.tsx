@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section
       className="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
-      style={{ backgroundImage: "url('https://picsum.photos/seed/carinterior/1920/1080')" }}
+      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1920&auto=format&fit=crop')" }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="relative z-10 px-6">

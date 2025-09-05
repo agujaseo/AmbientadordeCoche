@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { Product, Pack, CartItem } from './types';
+import type { Product, Pack, CartItem, GuestDetails } from './types';
 import AnnouncementBar from './components/AnnouncementBar';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -30,8 +30,8 @@ const App: React.FC = () => {
     setIsCheckoutModalOpen(false);
   };
   
-  const handleConfirmPurchase = () => {
-    alert('¡Gracias por tu compra! En un sitio real, serías redirigido a la pasarela de pago.');
+  const handleConfirmPurchase = (details: GuestDetails) => {
+    alert(`¡Gracias por tu compra, ${details.name}!\n\nTu pedido será enviado a: ${details.address}.\n\nSe ha enviado una confirmación a ${details.email}.\n\n(En un sitio real, serías redirigido a la pasarela de pago.)`);
     setCartItems([]);
     setIsCheckoutModalOpen(false);
     setIsCartOpen(false);

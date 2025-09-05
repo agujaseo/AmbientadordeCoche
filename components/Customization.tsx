@@ -27,7 +27,7 @@ const Customization: React.FC = () => {
               </li>
             </ul>
             <a
-              href="mailto:contacto@blacklabelscents.test"
+              href="mailto:info@ambientadordecoche.es"
               className="bg-amber-500 text-black font-bold py-3 px-8 rounded-md text-lg hover:bg-amber-400 transition-transform duration-300 transform inline-block hover:scale-105"
             >
               Contacta para Informes
@@ -35,7 +35,7 @@ const Customization: React.FC = () => {
           </div>
           <div>
             <img 
-              src="https://picsum.photos/seed/custom/600/600" 
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=600&h=600&auto=format&fit=crop" 
               alt="Ambientador personalizado" 
               className="rounded-lg shadow-2xl mx-auto"
             />

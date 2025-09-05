@@ -27,3 +27,9 @@ export interface CartItem {
   product: Product | Pack;
   quantity: number;
 }
+
+export interface GuestDetails {
+  name: string;
+  email: string;
+  address: string;
+}

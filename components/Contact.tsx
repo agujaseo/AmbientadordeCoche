@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
           Estamos aquí para ayudarte. Si tienes preguntas sobre nuestros productos, personalización para empresas o eventos, o simplemente quieres decir hola, no dudes en contactarnos.
         </p>
         <a
-          href="mailto:contacto@blacklabelscents.test"
+          href="mailto:info@ambientadordecoche.es"
           className="bg-amber-500 text-black font-bold py-4 px-10 rounded-md text-xl hover:bg-amber-400 transition-transform duration-300 transform inline-block hover:scale-105"
         >
           Enviar un Email

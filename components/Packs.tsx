@@ -14,8 +14,8 @@ interface PackConfig {
 }
 
 const packConfigs: Record<string, PackConfig> = {
-  pack3: { size: 3, price: 18.00, originalPrice: 21.00, image: 'https://picsum.photos/seed/pack3/500/500' },
-  pack5: { size: 5, price: 28.00, originalPrice: 35.00, image: 'https://picsum.photos/seed/pack5/500/500' },
+  pack3: { size: 3, price: 18.00, originalPrice: 21.00, image: 'https://images.unsplash.com/photo-1617822447953-837599c238c3?q=80&w=500&h=500&auto=format&fit=crop' },
+  pack5: { size: 5, price: 28.00, originalPrice: 35.00, image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=500&h=500&auto=format&fit=crop' },
 };
 
 const PackSelector: React.FC<{ config: PackConfig; onAddToCart: PacksProps['onAddToCart'] }> = ({ config, onAddToCart }) => {
