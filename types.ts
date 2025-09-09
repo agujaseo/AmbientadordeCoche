@@ -33,3 +33,5 @@ export interface GuestDetails {
   email: string;
   address: string;
 }
+
+export type LegalPage = 'notice' | 'privacy' | 'cookies' | 'terms';

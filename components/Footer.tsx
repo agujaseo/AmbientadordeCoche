@@ -1,6 +1,11 @@
 import React from 'react';
+import type { LegalPage } from '../types';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    onLegalLinkClick: (page: LegalPage) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onLegalLinkClick }) => {
     const aromas = [
         { name: 'Flor de Higo' }, { name: 'Aire' }, { name: 'Zen' }, { name: 'Té Verde' },
         { name: 'Mango' }, { name: 'Neutralizador' }, { name: 'Cereza' }, { name: 'Marsella' }
@@ -49,8 +54,7 @@ const Footer: React.FC = () => {
                     <div className="space-y-4">
                         <h4 className="text-lg font-semibold text-white">Soporte</h4>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">Política de Envíos</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">Política de Devoluciones</a></li>
+                            <li><button onClick={() => onLegalLinkClick('terms')} className="text-gray-400 hover:text-amber-400 transition-colors text-sm text-left">Términos y Condiciones</button></li>
                             <li><a href="#contact" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">Formulario de Contacto</a></li>
                         </ul>
                     </div>
@@ -83,6 +87,13 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="mt-16 pt-8 border-t border-gray-800 text-center">
+                    <div className="flex justify-center items-center space-x-4 mb-4">
+                        <button onClick={() => onLegalLinkClick('notice')} className="text-gray-400 hover:text-amber-400 transition-colors text-sm">Aviso Legal</button>
+                        <span className="text-gray-600">|</span>
+                        <button onClick={() => onLegalLinkClick('privacy')} className="text-gray-400 hover:text-amber-400 transition-colors text-sm">Política de Privacidad</button>
+                         <span className="text-gray-600">|</span>
+                        <button onClick={() => onLegalLinkClick('cookies')} className="text-gray-400 hover:text-amber-400 transition-colors text-sm">Política de Cookies</button>
+                    </div>
                     <p className="text-gray-500 text-sm">
                         &copy; {new Date().getFullYear()} BlackLabel Scents. Todos los derechos reservados.
                     </p>

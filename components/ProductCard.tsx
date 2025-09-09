@@ -23,7 +23,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onToggleReviews, isR
   return (
     <>
       <div className="relative">
-        <img src={product.image} alt={product.name} className="w-full h-56 object-cover" />
+        <div
+          style={{ backgroundImage: `url(${product.image})` }}
+          role="img"
+          aria-label={product.name}
+          className="w-full h-56 bg-cover bg-center"
+        ></div>
         <div className="absolute top-0 right-0 bg-black/70 p-2 m-2 rounded-md">
             <span className="text-white font-bold text-lg">{product.price.toFixed(2)}€</span>
         </div>

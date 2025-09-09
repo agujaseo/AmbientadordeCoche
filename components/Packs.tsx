@@ -14,8 +14,8 @@ interface PackConfig {
 }
 
 const packConfigs: Record<string, PackConfig> = {
-  pack3: { size: 3, price: 18.00, originalPrice: 21.00, image: 'https://images.unsplash.com/photo-1617822447953-837599c238c3?q=80&w=500&h=500&auto=format&fit=crop' },
-  pack5: { size: 5, price: 28.00, originalPrice: 35.00, image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=500&h=500&auto=format&fit=crop' },
+  pack3: { size: 3, price: 18.00, originalPrice: 21.00, image: 'https://images.unsplash.com/photo-1625895197142-f2a15b3a8707?q=80&w=800&h=600&fm=webp&fit=crop' },
+  pack5: { size: 5, price: 28.00, originalPrice: 35.00, image: 'https://images.unsplash.com/photo-1627905646187-2173b22b8423?q=80&w=800&h=600&fm=webp&fit=crop' },
 };
 
 const PackSelector: React.FC<{ config: PackConfig; onAddToCart: PacksProps['onAddToCart'] }> = ({ config, onAddToCart }) => {
@@ -58,7 +58,12 @@ const PackSelector: React.FC<{ config: PackConfig; onAddToCart: PacksProps['onAd
   return (
     <div className="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
       <div className="relative">
-        <img src={config.image} alt={`Pack de ${config.size} ambientadores`} className="w-full h-64 object-cover"/>
+        <div
+          style={{ backgroundImage: `url(${config.image})` }}
+          role="img"
+          aria-label={`Pack de ${config.size} ambientadores`}
+          className="w-full h-64 bg-cover bg-center"
+        ></div>
         <span className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">OFERTA</span>
       </div>
       <div className="p-6 flex flex-col flex-grow">

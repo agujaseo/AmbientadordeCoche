@@ -6,11 +6,12 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
            <div>
-            <img 
-              src="https://images.unsplash.com/photo-1600880292210-4928b4382103?q=80&w=600&h=600&auto=format&fit=crop" 
-              alt="Elaboración de ambientadores" 
-              className="rounded-lg shadow-2xl mx-auto"
-            />
+            <div
+              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600880292210-4928b4382103?q=80&w=800&h=800&fm=webp&fit=crop')` }}
+              role="img"
+              aria-label="Elaboración de ambientadores de alta calidad"
+              className="rounded-lg shadow-2xl mx-auto w-full aspect-square max-w-md bg-cover bg-center"
+            ></div>
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-4xl font-extrabold text-white mb-4">Nuestra Pasión, tu Aroma</h2>

@@ -34,11 +34,12 @@ const Customization: React.FC = () => {
             </a>
           </div>
           <div>
-            <img 
-              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=600&h=600&auto=format&fit=crop" 
-              alt="Ambientador personalizado" 
-              className="rounded-lg shadow-2xl mx-auto"
-            />
+            <div
+              style={{ backgroundImage: `url('https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=800&h=800&fm=webp&fit=crop')` }}
+              role="img"
+              aria-label="Ambientador personalizado con un logo"
+              className="rounded-lg shadow-2xl mx-auto w-full aspect-square max-w-md bg-cover bg-center"
+            ></div>
           </div>
         </div>
       </div>

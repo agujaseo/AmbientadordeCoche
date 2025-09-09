@@ -24,7 +24,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({
     0
   );
   
-  const shippingCost = subtotal >= 40 || subtotal === 0 ? 0 : 4.99;
+  const shippingCost = subtotal >= 40 || subtotal === 0 ? 0 : 5.99;
   const total = subtotal + shippingCost;
 
   return (
@@ -75,11 +75,12 @@ const CartSidebar: React.FC<CartSidebarProps> = ({
                   const isPack = typeof item.product.id === 'string' && item.product.id.startsWith('pack-');
                   return (
                     <li key={item.product.id} className="flex items-start space-x-4 p-4 bg-gray-800 rounded-md">
-                      <img
-                        src={item.product.image}
-                        alt={item.product.name}
-                        className="w-20 h-20 object-cover rounded-md"
-                      />
+                      <div
+                        style={{ backgroundImage: `url(${item.product.image})` }}
+                        role="img"
+                        aria-label={item.product.name}
+                        className="w-20 h-20 bg-cover bg-center rounded-md flex-shrink-0"
+                      ></div>
                       <div className="flex-grow">
                         <h3 className="font-semibold">{item.product.name}</h3>
                         {isPack && <p className="text-xs text-gray-400 mt-1">{(item.product as Pack).description}</p>}
